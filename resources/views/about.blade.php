@@ -5,14 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Welcome</div>
+                <div class="card-header">About</div>
 
                 <div class="card-body">
-                    Welcome to Mo's Bookstore! :D
-
-                    <br/>
-
-                    Learn more <a href="{{ route('about') }}">about us.</a>
+                    Oh hello there ;)
                 </div>
             </div>
         </div>
