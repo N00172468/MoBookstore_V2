@@ -1,4 +1,12 @@
 <?php
+# @Author: John Carlo M. Ramos
+# @Date:   2019-11-02T14:04:58+00:00
+# @Email:  !!!!!---CTRL + ALT + C = Colour Picker---!!!!!
+# @Last modified by:   John Carlo M. Ramos
+# @Last modified time: 2019-11-02T15:13:13+00:00
+
+
+
 
 use Illuminate\Database\Seeder;
 
@@ -11,6 +19,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // Call Role Seeders:
+        $this->call(RolesTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
     }
 }
