@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in! Welcome back, Peasant.
+                    You are logged in! Welcome back, Peasant. <a href="{{ route('user.books.index') }}">Books</a>
                 </div>
             </div>
         </div>

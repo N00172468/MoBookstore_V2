@@ -8,7 +8,7 @@
                 <div class="card-header">Welcome</div>
 
                 <div class="card-body">
-                    Welcome to Mo's Bookstore! :D
+                    Welcome to Mo's Bookstore! :D <a href="{{ route('admin.books.index') }}">Books</a>
 
                     <br/>
 
