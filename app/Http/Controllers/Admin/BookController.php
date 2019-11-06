@@ -3,7 +3,7 @@
 # @Date:   2019-11-02T21:12:03+00:00
 # @Email:  !!!!!---CTRL + ALT + C = Colour Picker---!!!!!
 # @Last modified by:   John Carlo M. Ramos
-# @Last modified time: 2019-11-02T23:59:09+00:00
+# @Last modified time: 2019-11-05T15:11:30+00:00
 
 
 
@@ -123,7 +123,7 @@ class BookController extends Controller
         'author' => 'required|max:191',
         'publisher' => 'required|max:191',
         'year' => 'required|integer|min:1900',
-        'isbn' => 'required|alpha_num|size:13|unique:books, isbn,' . $book->id,
+        'isbn' => 'required|alpha_num|size:13|unique:books,isbn,' . $book->id,
         'price' => 'required|numeric|min:0'
       ]);
 
