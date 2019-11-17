@@ -14,7 +14,18 @@
                         </div>
                     @endif
 
-                    You are logged in! Welcome back, Peasant. <a href="{{ route('user.books.index') }}">Books</a>
+                    You are logged in!.
+                    <a href="{{ route('user.books.index') }}">Books</a>
+                    <br/>
+                    <br/>
+                    Name: {{ Auth::user()->name }}
+                    <br/>
+                    Email: {{ Auth::user()->email }}
+                    <br/>
+                    Address: {{ Auth::user()->customer->address }}
+                    <br/>
+                    Phone: {{ Auth::user()->customer->phone }}
+
                 </div>
             </div>
         </div>
