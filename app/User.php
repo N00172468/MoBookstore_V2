@@ -3,7 +3,7 @@
 # @Date:   2019-11-02T14:04:58+00:00
 # @Email:  !!!!!---CTRL + ALT + C = Colour Picker---!!!!!
 # @Last modified by:   John Carlo M. Ramos
-# @Last modified time: 2019-11-02T16:47:41+00:00
+# @Last modified time: 2019-11-17T10:36:04+00:00
 
 
 
@@ -44,6 +44,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function customer() {
+      return $this->hasOne('App\Customer');
+    }
 
     // Telling Laravel that user and roles model are related:
     public function roles()
